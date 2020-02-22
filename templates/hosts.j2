@@ -1,6 +1,7 @@
 # {{ ansible_managed }}
 {% for definition in hosts_all_hosts: %}
 {{ definition.address }}{% for hostname in definition.hostnames %} {{ hostname }}{% endfor %}
+
 {% endfor %}
 
 
